@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue sur ma page</title>
+    <style>
+        body {
+            background-color: #d6e3f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #003366;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        table {
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+
+        table, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .formulaire {
+            width: 400px;
+            margin: 20px auto;
+            border: 2px solid #003366;
+            background-color: #e8f0fa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .formulaire label {
+            display: block;
+            margin-top: 8px;
+        }
+
+        .formulaire input, .formulaire textarea {
+            width: 95%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur ma page</h1>
+
+    <img src="photo.jpeg.png" alt="Photo de profil">
+
+    <p>Votre description/présentation : Florian POCH</p>
+
+    <table>
+        <tr>
+            <td colspan="2" style="text-align:center; font-weight:bold;">Contactez moi</td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>07.69.51.30.79</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>flogammme@gmail.com</td>
+        </tr>
+    </table>
+
+    <p>Vous pouvez aussi me contacter en complétant ce formulaire :</p>
+
+    <form class="formulaire">
+        <label for="email">Votre email :</label>
+        <input type="email" id="email" name="email">
+
+        <label for="objet">Objet de l'email :</label>
+        <input type="text" id="objet" name="objet">
+
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <a href="#">Lien vers mon dossier des projets BTS</a>
+    <a href="#">Télécharger mon CV en PDF</a>
+
+</body>
+</html>
